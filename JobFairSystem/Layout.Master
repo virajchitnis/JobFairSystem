@@ -4,6 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -15,5 +19,7 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
+    <script src="js/jquery-1.111.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
