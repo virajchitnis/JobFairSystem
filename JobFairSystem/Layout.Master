@@ -25,8 +25,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" id="header-students-link">Students</a></li>
-                    <li><a href="#" id="header-employers-link">Employers</a></li>
+                    <asp:ContentPlaceHolder ID="cntNavBar" runat="server"></asp:ContentPlaceHolder>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -50,5 +49,6 @@
     </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="cntScripts" runat="server"></asp:ContentPlaceHolder>
 </body>
 </html>

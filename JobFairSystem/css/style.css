@@ -49,6 +49,7 @@ body {
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: none;
     background-color: #9e1b34;
 }
 
@@ -64,4 +65,41 @@ body {
     border: none;
     border-radius: 0;
     box-shadow: none;
+}
+
+.overlay_backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+    display: none;
+}
+
+.overlay-panel {
+    position: fixed;
+    z-index: 11;
+    display: none;
+}
+
+#add-student-overlay {
+    width: 400px;
+    height: 549px;
+    top: 100px;
+    left: calc(50% - 200px);
+    top: calc(50% - 274.5px);
+}
+
+#add-student-title-bar {
+    background-color: #9e1b34;
+}
+
+#add-student-title {
+    color: white;
+}
+
+.btn-form-submit {
+    float: right;
 }
