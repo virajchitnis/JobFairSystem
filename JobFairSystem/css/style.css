@@ -1,0 +1,9 @@
+﻿* {
+    margin: 0;
+}
+#header-bar {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
