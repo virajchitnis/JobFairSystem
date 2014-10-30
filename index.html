@@ -1,14 +1,52 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="Students.aspx.cs" Inherits="JobFairSystem.Students" %>
+<!DOCTYPE html>
 
-<asp:Content ID="cntHead" ContentPlaceHolderID="head" runat="server">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /><link rel="stylesheet" href="css/bootstrap.css" /><link rel="stylesheet" href="css/style.css" />
     <title>Students - Job Fair System</title>
-</asp:Content>
-<asp:Content ID="cntNavBar" ContentPlaceHolderID="cntNavBar" runat="server">
+<title>
+
+</title></head>
+<body>
+    <nav class="navbar navbar-inverse" role="navigation" id="header-bar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" id="header-brand-name">Job Fair System</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    
     <li class="active"><a href="#" id="header-students-link">Students</a></li>
     <li><a href="#" id="header-employers-link">Employers</a></li>
-</asp:Content>
-<asp:Content ID="cntBody" ContentPlaceHolderID="cntBody" runat="server">
-    <form id="form1" runat="server" role="form">
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="header-user-dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;User Name&nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;Account settings</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <form method="post" action="Students.aspx" id="form1" role="form">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ISJR91X6GwyaWJED7AkpcMgg83iNgTH53gwQvUrs3aC2dhN5sZjopyQuOgr95f77Mv5QtEu6yBVD789pMwLx8/ZSxi6G1cGy2lhNaStirhI=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8DD0F08A" />
+</div>
         <div class="overlay_backdrop" id="overlay-backdrop"></div>
         <div class="panel panel-default overlay-panel" id="add-student-overlay">
             <div class="panel-heading" id="add-student-title-bar">
@@ -124,7 +162,30 @@
             </div>
         </div>
     </form>
-</asp:Content>
-<asp:Content ID="cntScripts" ContentPlaceHolderID="cntScripts" runat="server">
+
+    <div class="footer">
+        <div class="footer-header"></div>
+        <div class="footer-body">
+            <table id="footer-body-table">
+                <tr>
+                    <td><span class="glyphicon glyphicon-map-marker"></span>&nbsp;</td>
+                    <td><b>TEMPLE UNIVERSITY</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Viraj Chitnis<br />SERC<br />1947 N 12th Street<br />Room 364<br />Philadelphia, PA 19122</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-footer">
+            <p id="footer-footer-copyright">Copyright &copy; 2014 Viraj Chitnis. All Rights Reserved.</p>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
     <script src="js/Students.js"></script>
-</asp:Content>
+
+</body>
+</html>
+
