@@ -29,7 +29,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="header-user-dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;Rose Mginnis&nbsp;<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="header-user-dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;User Name&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;Account settings</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a></li>
@@ -43,7 +43,16 @@
     <div class="footer">
         <div class="footer-header"></div>
         <div class="footer-body">
-            <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp;<b>TEMPLE UNIVERSITY</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Viraj Chitnis<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SERC<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1947 N 12th Street<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room 364<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philadelphia, PA 19122<br /><br /></p>
+            <table id="footer-body-table">
+                <tr>
+                    <td><span class="glyphicon glyphicon-map-marker"></span>&nbsp;</td>
+                    <td><b>TEMPLE UNIVERSITY</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Viraj Chitnis<br />SERC<br />1947 N 12th Street<br />Room 364<br />Philadelphia, PA 19122</td>
+                </tr>
+            </table>
         </div>
         <div class="footer-footer">
             <p id="footer-footer-copyright">Copyright &copy; 2014 Viraj Chitnis. All Rights Reserved.</p>

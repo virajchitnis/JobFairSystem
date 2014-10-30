@@ -10,6 +10,7 @@
     });
 
     verticallyCenter($("#footer-footer-copyright"), 'absolute');
+    verticallyCenter($("#footer-body-table"), 'absolute');
 });
 
 function openStudentBox() {
