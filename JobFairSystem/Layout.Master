@@ -12,7 +12,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <nav class="navbar navbar-default" role="navigation" id="header-bar">
+    <nav class="navbar navbar-inverse" role="navigation" id="header-bar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -21,16 +21,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Job Fair System</a>
+                <a class="navbar-brand" href="#" id="header-brand-name">Job Fair System</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Students</a></li>
-                    <li><a href="#">Employers</a></li>
+                    <li class="active"><a href="#" id="header-students-link">Students</a></li>
+                    <li><a href="#" id="header-employers-link">Employers</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;Rose Mginnis&nbsp;<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="header-user-dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;Rose Mginnis&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;Account settings</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a></li>
@@ -40,10 +40,14 @@
             </div>
         </div>
     </nav>
-    <form id="form1" runat="server">
-        <div>
+    <asp:ContentPlaceHolder ID="cntBody" runat="server"></asp:ContentPlaceHolder>
+    <div class="footer">
+        <div class="footer-header"></div>
+        <div class="footer-body">
+            <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp;<b>TEMPLE UNIVERSITY</b><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Viraj Chitnis<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SERC<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1947 N 12th Street<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Room 364<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philadelphia, PA 19122<br /><br /></p>
         </div>
-    </form>
+        <div class="footer-footer"></div>
+    </div>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
